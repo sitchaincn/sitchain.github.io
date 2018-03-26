@@ -1,5 +1,20 @@
-
 <!DOCTYPE html>
+<script type="text/javascript">
+　　var type = navigator.appName;
+　　if (type == "Netscape"){
+　　var lang = navigator.language;//获取浏览器配置语言，支持非IE浏览器
+　　}else{
+　　var lang = navigator.userLanguage;//获取浏览器配置语言，支持IE5+ == navigator.systemLanguage
+　　};
+　　var lang = lang.substr(0, 2);//获取浏览器配置语言前两位
+　　if (lang == "zh"){
+　　    window.location.replace('https://sitchaincn.github.io');//中文编码时打开链接
+　　//}else if (lang == "en"){
+　　// window.location.replace('http://www.sharinglease.com');
+　　//}else{//其他语言编码时打开以下链接
+　//　 window.location.replace('url');
+　　};
+</script>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
